@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_9-of-12  slds-scrollable_y" style="height:22rem; width: 56rem;" >
+        <lightning-datatable 
+            key-field="id"      
+            columns={columnsMap}
+            data={allRecordsOfSelectedObject}
+            show-row-number-column="true"
+            onrowaction={handleRowAction}
+            row-actions={action}>
+        </lightning-datatable>
+    </div>
+    </div>
+</template>
